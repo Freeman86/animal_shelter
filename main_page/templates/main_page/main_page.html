@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h2>Список животных отсортирован по дате прибытия</h2>
+{% for item in animals %}
+<div>
+    Кличка: {{ item.nickname }}
+    Возраст: {{ item.age }}
+    Дата прибытия: {{ item.date_arrival }}
+    Вес: {{ item.weight }}
+    Рост: {{ item.height }}
+    Особые приметы: {{ item.special_mark }}
+    </div>
+----------------------------------
+    <br>
+{% endfor %}
+{% endblock %}
